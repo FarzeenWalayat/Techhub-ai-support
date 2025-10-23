@@ -1,4 +1,8 @@
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import sys
 sys.path.append('.')
 
 import streamlit as st
@@ -137,4 +141,5 @@ st.markdown("""
     <div style="text-align: center; color: #666; font-size: 12px;">
         <p>Powered by TechHub AI | Available 24/7</p>
     </div>
+
 """, unsafe_allow_html=True)
